@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView=(NavigationView)findViewById(R.id.navigationview);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //default fragment
+        //default fragment added
         if (savedInstanceState ==null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new accoutn_fragment()).commit();
         }
